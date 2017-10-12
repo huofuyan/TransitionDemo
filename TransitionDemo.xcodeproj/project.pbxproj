@@ -15,6 +15,8 @@
 		181D55261F8F12BF005B52A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D55251F8F12BF005B52A7 /* main.m */; };
 		181D55301F8F12BF005B52A7 /* TransitionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D552F1F8F12BF005B52A7 /* TransitionDemoTests.m */; };
 		181D553B1F8F12BF005B52A7 /* TransitionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D553A1F8F12BF005B52A7 /* TransitionDemoUITests.m */; };
+		181D554B1F8F1542005B52A7 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D55491F8F1542005B52A7 /* TwoViewController.m */; };
+		181D554C1F8F1542005B52A7 /* TwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181D554A1F8F1542005B52A7 /* TwoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		181D55361F8F12BF005B52A7 /* TransitionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181D553A1F8F12BF005B52A7 /* TransitionDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionDemoUITests.m; sourceTree = "<group>"; };
 		181D553C1F8F12BF005B52A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		181D55481F8F1542005B52A7 /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		181D55491F8F1542005B52A7 /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		181D554A1F8F1542005B52A7 /* TwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,9 @@
 				181D55211F8F12BF005B52A7 /* LaunchScreen.storyboard */,
 				181D55241F8F12BF005B52A7 /* Info.plist */,
 				181D55251F8F12BF005B52A7 /* main.m */,
+				181D55481F8F1542005B52A7 /* TwoViewController.h */,
+				181D55491F8F1542005B52A7 /* TwoViewController.m */,
+				181D554A1F8F1542005B52A7 /* TwoViewController.xib */,
 			);
 			path = TransitionDemo;
 			sourceTree = "<group>";
@@ -241,6 +249,7 @@
 				181D55231F8F12BF005B52A7 /* LaunchScreen.storyboard in Resources */,
 				181D55201F8F12BF005B52A7 /* Assets.xcassets in Resources */,
 				181D551E1F8F12BF005B52A7 /* Main.storyboard in Resources */,
+				181D554C1F8F1542005B52A7 /* TwoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +277,7 @@
 				181D551B1F8F12BF005B52A7 /* ViewController.m in Sources */,
 				181D55261F8F12BF005B52A7 /* main.m in Sources */,
 				181D55181F8F12BF005B52A7 /* AppDelegate.m in Sources */,
+				181D554B1F8F1542005B52A7 /* TwoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
