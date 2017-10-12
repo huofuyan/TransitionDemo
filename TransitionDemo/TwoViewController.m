@@ -16,7 +16,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+   
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    
+    button.center = self.view.center;
+    
+    [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:button];
+    
+    self.view.backgroundColor = [UIColor grayColor];
+    
+    
+    
+    
+}
+
+- (void)click {
+ 
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

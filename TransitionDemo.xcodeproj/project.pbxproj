@@ -17,6 +17,7 @@
 		181D553B1F8F12BF005B52A7 /* TransitionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D553A1F8F12BF005B52A7 /* TransitionDemoUITests.m */; };
 		181D554B1F8F1542005B52A7 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D55491F8F1542005B52A7 /* TwoViewController.m */; };
 		181D554C1F8F1542005B52A7 /* TwoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181D554A1F8F1542005B52A7 /* TwoViewController.xib */; };
+		181D554F1F8F375D005B52A7 /* animationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D554E1F8F375D005B52A7 /* animationTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		181D55481F8F1542005B52A7 /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		181D55491F8F1542005B52A7 /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		181D554A1F8F1542005B52A7 /* TwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoViewController.xib; sourceTree = "<group>"; };
+		181D554D1F8F375D005B52A7 /* animationTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = animationTool.h; sourceTree = "<group>"; };
+		181D554E1F8F375D005B52A7 /* animationTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = animationTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 				181D55481F8F1542005B52A7 /* TwoViewController.h */,
 				181D55491F8F1542005B52A7 /* TwoViewController.m */,
 				181D554A1F8F1542005B52A7 /* TwoViewController.xib */,
+				181D554D1F8F375D005B52A7 /* animationTool.h */,
+				181D554E1F8F375D005B52A7 /* animationTool.m */,
 			);
 			path = TransitionDemo;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				181D554F1F8F375D005B52A7 /* animationTool.m in Sources */,
 				181D551B1F8F12BF005B52A7 /* ViewController.m in Sources */,
 				181D55261F8F12BF005B52A7 /* main.m in Sources */,
 				181D55181F8F12BF005B52A7 /* AppDelegate.m in Sources */,
