@@ -9,7 +9,8 @@
 #import "ViewController.h"
 #import "TwoViewController.h"
 #import "animationTool.h"
-@interface ViewController ()<UIViewControllerTransitioningDelegate>
+
+@interface ViewController ()
 
 @end
 
@@ -33,21 +34,19 @@
 
 - (void)click {
     
-    [self presentViewController:[TwoViewController new] animated:YES completion:^{
+    TwoViewController *twoVC = [[TwoViewController alloc] init];
+    
+    
+    
+    [self presentViewController:twoVC animated:YES completion:^{
+        
+        
         
     }];
 }
 
 
-- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
-    
-    
-    return [animationTool new];
-}
 
-- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    
-}
 
 
 

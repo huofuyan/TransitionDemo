@@ -7,8 +7,9 @@
 //
 
 #import "TwoViewController.h"
+#import "animationTool.h"
 
-@interface TwoViewController ()
+@interface TwoViewController ()<UIViewControllerTransitioningDelegate>
 
 @end
 
@@ -27,7 +28,7 @@
     
     self.view.backgroundColor = [UIColor grayColor];
     
-    
+    self.transitioningDelegate = self;
     
     
 }
@@ -38,6 +39,18 @@
         
     }];
 }
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    
+    
+    return [animationTool new];
+}
+
+-(id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    return [animationTool new];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

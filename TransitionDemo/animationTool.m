@@ -11,9 +11,17 @@
 #import "TwoViewController.h"
 @implementation animationTool
 
+
+- (instancetype)init {
+    self = [super init];
+
+    return self;
+}
+
 - (void)animateTransition:(nonnull id<UIViewControllerContextTransitioning>)transitionContext {
     ;
     TwoViewController *twoVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    
     
     
     UIView *containerView = [transitionContext containerView];
