@@ -22,9 +22,13 @@
     ;
     TwoViewController *twoVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
+    twoVC.view.center = [UIApplication sharedApplication].keyWindow.center;
     
+    twoVC.view.transform = CGAffineTransformMakeScale(0.1, 0.1);
     
     UIView *containerView = [transitionContext containerView];
+    
+    containerView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.1];
     
     [containerView addSubview:twoVC.view];
     
@@ -32,22 +36,19 @@
         
         twoVC.view.alpha = 1.0;
         
-        twoVC.view.transform = CGAffineTransformMakeScale(2, 2);
+        twoVC.view.transform = CGAffineTransformMakeScale(1, 1);
         
     } completion:^(BOOL finished) {
         
-//        [UIView animateWithDuration:0.2 animations:^{
+        [UIView animateWithDuration:5 animations:^{
             twoVC.view.transform = CGAffineTransformIdentity;
-//        } completion:^(BOOL finished) {
+        } completion:^(BOOL finished) {
             [transitionContext completeTransition:YES];
-//        }];
+        }];
     
     }];
     
-    
-    
 }
-
 - (NSTimeInterval)transitionDuration:(nullable id<UIViewControllerContextTransitioning>)transitionContext {
     return 0.5;
 }

@@ -29,8 +29,6 @@
     self.view.backgroundColor = [UIColor grayColor];
     
     self.transitioningDelegate = self;
-    
-    
 }
 
 - (void)click {
@@ -46,9 +44,10 @@
     return [animationTool new];
 }
 
--(id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    return [animationTool new];
-}
+//-(id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+//    return [animationTool new];
+////
+//}
 
 
 
