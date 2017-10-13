@@ -24,9 +24,9 @@
     
     [button addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.view addSubview:button];
+    self.view.backgroundColor = [UIColor clearColor];
     
-    self.view.backgroundColor = [UIColor grayColor];
+    [self.view addSubview:button];
     
     self.transitioningDelegate = self;
 }

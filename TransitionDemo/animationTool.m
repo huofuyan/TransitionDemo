@@ -24,11 +24,12 @@
     
     twoVC.view.center = [UIApplication sharedApplication].keyWindow.center;
     
-    twoVC.view.transform = CGAffineTransformMakeScale(0.1, 0.1);
+    twoVC.alertView.transform = CGAffineTransformMakeScale(0.1, 0.1);
     
     UIView *containerView = [transitionContext containerView];
     
-    containerView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.1];
+//    containerView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.1];
+    containerView.backgroundColor = [UIColor clearColor];
     
     [containerView addSubview:twoVC.view];
     
@@ -36,12 +37,12 @@
         
         twoVC.view.alpha = 1.0;
         
-        twoVC.view.transform = CGAffineTransformMakeScale(1, 1);
+        twoVC.alertView.transform = CGAffineTransformMakeScale(1, 1);
         
     } completion:^(BOOL finished) {
         
         [UIView animateWithDuration:5 animations:^{
-            twoVC.view.transform = CGAffineTransformIdentity;
+            twoVC.alertView.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
             [transitionContext completeTransition:YES];
         }];

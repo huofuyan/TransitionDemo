@@ -11,26 +11,36 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwoViewController">
             <connections>
+                <outlet property="alertView" destination="AmG-A4-i41" id="L77-FM-tMV"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aaaaa" translatesAutoresizingMaskIntoConstraints="NO" id="LNv-gg-InE">
-                    <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+                <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLN-za-0aQ" userLabel="backView">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aaaaa" translatesAutoresizingMaskIntoConstraints="NO" id="AmG-A4-i41">
+                    <rect key="frame" x="67" y="183" width="240" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="2hP-T2-J3q"/>
+                        <constraint firstAttribute="height" constant="300" id="DqB-TJ-Ai5"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="LNv-gg-InE" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="DRD-DU-gSL"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="LNv-gg-InE" secondAttribute="bottom" id="LZH-nm-Gv3"/>
-                <constraint firstItem="LNv-gg-InE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Zhn-qz-4Ft"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="LNv-gg-InE" secondAttribute="trailing" id="pfm-ff-F4N"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="BLN-za-0aQ" secondAttribute="bottom" id="A1X-aT-3B0"/>
+                <constraint firstItem="AmG-A4-i41" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="JQC-pJ-9uU"/>
+                <constraint firstItem="BLN-za-0aQ" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="RKr-Gz-ZWZ"/>
+                <constraint firstItem="AmG-A4-i41" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rXt-rT-1dp"/>
+                <constraint firstItem="BLN-za-0aQ" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="sXp-zl-Eat"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="BLN-za-0aQ" secondAttribute="trailing" id="zpC-ct-zz5"/>
             </constraints>
-            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
     </objects>
