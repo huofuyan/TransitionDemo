@@ -20,6 +20,8 @@
 
 - (void)animateTransition:(nonnull id<UIViewControllerContextTransitioning>)transitionContext {
     ;
+    
+    //获取视图控制器
     TwoViewController *twoVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
     twoVC.view.center = [UIApplication sharedApplication].keyWindow.center;

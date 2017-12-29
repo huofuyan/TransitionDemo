@@ -9,14 +9,21 @@
 #import "ViewController.h"
 #import "TwoViewController.h"
 #import "animationTool.h"
+#import "ThreeViewController.h"
+#import "DemoView.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) UIView* demoView;
 
+@property (nonatomic, strong) DemoView *demo2View;
+
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    
+    NSInteger _count;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,7 +47,16 @@
     
     [button.layer addAnimation:anim forKey:nil];
     
+    DemoView *view = [[DemoView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+    
+    
+    view.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:view];
+    
+    self.demo2View = view;
 }
+
 
 - (void)animWithPath {
     
@@ -62,6 +78,8 @@
 
 - (void)click {
     
+    
+    
     TwoViewController *twoVC = [[TwoViewController alloc] init];
     
     twoVC.modalPresentationStyle = UIModalPresentationOverFullScreen;
@@ -70,6 +88,9 @@
         
     }];
 }
+
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
